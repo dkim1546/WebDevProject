@@ -1,0 +1,72 @@
+<head>
+
+	<meta charset = "utf-8"/>
+	<meta name = "author" content = "Daniel D Kim">
+	<meta name = "keywords" content = "Carnegie Mellon University, CV">
+	<meta name = "descriptions" content = "Prantl's Website">
+
+	<link rel="stylesheet" media= "all" type="text/css" href="css/styles.css" />
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<div id="top_row">
+			<header>
+				<a href="index.html"><img src="images/logo.png"></a>
+			</header>
+
+			<nav>
+				<hr/>
+				<a href = "about.html">About</a>
+				<a href = "locations.html">Locations</a>
+				<a href = "events.html">Events</a>
+				<a href = "contact.html">Contact</a>
+			</nav>
+		</div>
+
+		<div id="content">
+			<h1>Contact</h1>
+			<div id="callInfo">
+				<h5>Call Us</h5>
+			</div>
+
+			<div id="emailForm">
+				<h5>Email Us</h5>
+
+				<form onsumbit="return validate()">
+					Name:<br>
+					<input type="text" id="name" name="name" value="Your Name" size="20" maxlength="250"><br><br>
+
+					Zip:<br>
+					<input type="number" id="zipNum" name="zipNum" value="01234"><br><br>
+
+					Email:<br>
+					<input type="email" id="email" name="email" placeholder="abc@defg.com"><br><br>
+
+					Message:<br>
+					<textarea name="message" rows="10" cols="50" maxlength="1000"></textarea><br><br>
+
+					Subscribe to our newsletter?:<br>
+					<input type="checkbox" id="pleaseupdateme" name="pleaseupdateme" value="Yes">Yes, please update me!<br><br>
+
+					<input type = "image" id="sumbit" name = "submit" src = "images/submit.png" alt = "Submit">
+				</form>
+			</div>
+		</div>
+
+		<footer>
+			<hr/>
+			<a href = "https://www.facebook.com/PrantlsBakery"><img src = "images/.png"></a>
+			<a href = "https://twitter.com/prantlsbakery"><img src = "images/.png"></a>
+			<a href = "https://www.instagram.com/prantls_bakery/"><img src = "images/.png"></a><br/>
+			&copy; Prantl's Bakery 2018<br/>
+
+		</footer>
+	</div>
+</body>
+
+</html>

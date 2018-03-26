@@ -1,0 +1,169 @@
+<head>
+
+	<meta charset = "utf-8"/>
+	<meta name = "author" content = "Daniel D Kim">
+	<meta name = "keywords" content = "Carnegie Mellon University, CV">
+	<meta name = "descriptions" content = "Prantl's Website">
+
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/series-label.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			$("#tabs").tabs({
+				event: "click"
+			});
+		});
+
+		$(function () {
+			$('#container-shadyGraph').highcharts({
+			    title: {
+			        text: 'Popular times for Shadyside location'
+			    },
+
+			    subtitle: {
+			        text: '(avg per day)'
+			    },
+
+			    xAxis: {
+			    	title: {
+			            text: 'Hours'
+			        },
+			        categories: ['7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm']
+			    },
+
+			    yAxis: {
+			        title: {
+			        	text: 'People'
+			        },
+			    },
+			    tooltip: {
+			    	valueSuffix: ''
+			    },
+			    legend: {
+			        layout: 'vertical',
+			        align: 'right',
+			        verticalAlign: 'middle'
+			    },
+
+			    series: [{
+			    	name: 'tempSHit'
+			        data: [10, 8, 24, 5, 7, 32, 16, 18, 27, 39, 32]
+			    }],
+			});
+		});
+
+	</script>
+</head>
+
+<body>
+	<div id="container">
+		<div id="top_row">
+			<header>
+				<a href="index.html"><img src="images/logo.png"></a>
+			</header>
+
+			<nav>
+				<hr/>
+				<a href = "about.html">About</a>
+				<a href = "locations.html">Locations</a>
+				<a href = "events.html">Events</a>
+				<a href = "contact.html">Contact</a>
+			</nav>
+		</div>
+
+		<div id="content">
+			<h1>Locations</h1>
+			<div id="tabs">
+				<ul>
+					<li><a href="#tabs-1">Downtown</a></li>
+					<li><a href="#tabs-2">Shadyside</a></li>
+				</ul>
+
+				<div id="tabs-1">
+					<div id="storePic">
+						<img scr="">
+					</div>
+
+					<div id="storeHours">
+						<h
+						<p>
+							Monday: 9am – 4pm<br>
+							Tuesday – Saturday: 7:30am – 6pm<br>
+							Sunday: 9am – 4pm<br>
+						<p>
+					</div>
+
+					<div id="storeInfo">
+						<p>
+							Shadyside<br>
+							5525 Walnut Street<br>
+							Phone number: 412-621-2092<br>
+							Email: info@prantlsbakery.com<br>
+						</p>
+					</div>
+
+					<div id="storeMap">
+
+					</div>
+
+					<div id="storeGraph">
+						<div id="container-shadyGraph"></div><br/>
+					</div>
+				</div>
+
+				<div id="tabs-2">
+						<div id="storePic">
+						<img scr="">
+					</div>
+
+					<div id="storeHours">
+						<p>
+							Monday – Friday: 7am – 6pm<br>
+							Saturday: 9am – 4pm<br>
+							Sunday: 10am – 3pm<br>
+						<p>
+					</div>
+
+					<div id="storeInfo">
+						<p>
+							Downtown<br>
+							438 Market Street<br>
+							Pittsburgh, PA 15222<br>
+							General Information: 412-471-6861<br>
+							Email: infoms@prantlsbakery.com<br>
+						</p>
+					</div>
+
+					<div id="storeMap">
+
+					</div>
+
+					<div id="storeGraph">
+						<div id="container-shadyGraph"></div><br/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<hr/>
+			<a href="https://www.facebook.com/PrantlsBakery"><img src = "images/.png"></a>
+			<a href="https://twitter.com/prantlsbakery"><img src = "images/.png"></a>
+			<a href="https://www.instagram.com/prantls_bakery/"><img src = "images/.png"></a><br/>
+			&copy; Prantl's Bakery 2018<br/>
+
+		</footer>
+	</div>
+</body>
+
+</html>
